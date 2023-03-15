@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
 import * as styles from "../styles/contact.module.css";
 
+export const Head = () => <title>Will - Contact</title>
+
 export default function Contact() {
 	return (
 		<Layout>

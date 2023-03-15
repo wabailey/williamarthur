@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from "../components/Layout";
 
+export const Head = () => <title>Will - Page Not Found</title>
+
 export default function NotFound() {
 	return (
 		<Layout>

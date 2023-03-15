@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `${__dirname}/src/images/WA-Logo-White.svg`,
-        name: `Web Developer | Will`,
+        icon: `${__dirname}/src/images/WA-Logo-WoB.svg`,
+        name: `Will - Web Developer`,
         start_url: `/`,
         background_color: `#0b0b0b`,
         theme_color: `#101010`,
@@ -39,9 +39,9 @@ module.exports = {
   ],
   siteMetadata: {
     title: "William Arthur",
-    description: "Web Development",
+    description: "Web Dev Portfolio",
     copyright: "Copyright 2023 William Arthur",
-    contact: "williamarthurbailey@outlook.com",
+    contact: "willarthbailey@gmail.com",
     linkedin: "https://www.linkedin.com/in/willab/",
     github: "https://github.com/wabailey",
   }

@@ -7,12 +7,13 @@ import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
 import ContactForm from "../components/ContactForm";
 
+export const Head = () => <title>Will - Web Developer</title>
 
 export default function Home({ data }) {
 
-  // console.log(data)
+  // console.log(data);
 
-  const project = data.allMarkdownRemark.nodes[0]
+  const project = data.allMarkdownRemark.nodes[0];
 
   return (
     <Layout>
@@ -20,9 +21,11 @@ export default function Home({ data }) {
       <section className={`slide ${styles.intro}`}>
         <h1>My name <br /> is Will. <br /> I can develop your website.</h1>
         <p>
-          I'm a freelance web developer working just outside of Wrexham and Chester. I find fulfilment in developing <br /> <Link to="/projects">website designs</Link> to pixel perfection and accompanying them with slick functionality. The tools that I am currently working with are <Link to="/">React</Link>, <Link to="/">Astro</Link>, and <Link to="/">Gatsby</Link>. The tools I am currently learning about are Next.js and Contentful.
+          I'm a freelance web developer working just outside of Wrexham and Chester. I find fulfilment in developing <br /> <Link to="/projects">website designs</Link> to pixel perfection and accompanying them with slick functionality. The tools that I am currently working with are <Link to="/projects/banking-app/">React</Link>, <Link to="/projects/ellwood-estates/">Astro</Link>, and <Link to="/projects/recipe-app/">Gatsby</Link>. The tools I am currently learning about are Next.js and Contentful.
         </p>
-        <button>My Work</button>
+        <Link to="/projects/">
+          <button type="button">My Work</button>
+        </Link>
       </section>
 
       <section className={`slide ${styles.project}`}>

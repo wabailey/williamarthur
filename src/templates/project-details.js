@@ -3,6 +3,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React from 'react'
 import Layout from "../components/Layout"
 
+export const Head = ({ data }) => <title>Will - {data.markdownRemark.frontmatter.title}</title>
+
 export default function ProjectDetails({ data }) {
 
 	const { html } = data.markdownRemark

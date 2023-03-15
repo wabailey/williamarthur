@@ -6,6 +6,8 @@ import "../../styles/global.css";
 import Layout from "../../components/Layout";
 import ProjectCard from "../../components/ProjectCard";
 
+export const Head = () => <title>Will - Projects</title>
+
 export default function Projects({ data }) {
 
 	// console.log(data)
