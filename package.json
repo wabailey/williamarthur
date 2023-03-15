@@ -3,9 +3,6 @@
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
-  "engines": {
-    "node": "18.12.1"
-  },
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
