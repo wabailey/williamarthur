@@ -50,11 +50,11 @@ export default function ContactForm({ contactWrapper, align }) {
 
 				</div>
 
-			</form>
+				<div style={align}>
+					<button type="submit">Submit</button>
+				</div>
 
-			<div style={align}>
-				<button type="submit">Submit</button>
-			</div>
+			</form>
 
 		</div>
 
