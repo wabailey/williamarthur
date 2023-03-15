@@ -1,0 +1,16 @@
+.contact {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 50vw;
+	flex-direction: column;
+	margin-top: 20vh;
+	padding-top: 4rem;
+	padding-left: 15rem;
+}
+
+.contact h1 {
+	position: fixed;
+	transform-origin: top left;
+	transform: rotate(-90deg) translateX(-100%) translateY(-100%);
+}

@@ -1,0 +1,84 @@
+.project_card {
+	position: relative;
+	height: 60vh;
+	width: 25vw;
+	z-index: 2;
+}
+
+.card_container {
+	z-index: 3;
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	transition: opacity 1s cubic-bezier(.19, 1, .22, 1);
+}
+
+.card_container:hover .card_text {
+	opacity: 1;
+}
+
+.card_container:hover .card_overlay {
+	opacity: 1;
+}
+
+.card_container img {
+	transition: transform 1s cubic-bezier(0.6, 0, 0.2, 1) !important;
+}
+
+.card_container:hover img {
+	transform: scale(1.1);
+}
+
+.card_container:hover .card_sidetext {
+	transform: translate(-100%, 0rem) rotate(270deg) translateY(1rem) translateX(-1rem);
+}
+
+.card_text {
+	display: flex;
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 4em;
+	transition: opacity 1s cubic-bezier(.19, 1, .22, 1);
+	z-index: 10;
+	opacity: 0;
+}
+
+.card_stroke {
+	display: inline-block;
+	width: 4em;
+	height: 1px;
+	background-color: rgb(235, 235, 235);
+	margin-bottom: 2rem;
+}
+
+.card_overlay {
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	z-index: 5;
+	background: linear-gradient(to top, rgba(0, 0, 0, .7) 0, rgba(0, 0, 0, .3) 100%);
+	transition: opacity 1s cubic-bezier(.19, 1, .22, 1);
+	opacity: 0;
+}
+
+.card_img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.card_sidetext {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: transform 1s cubic-bezier(.165, .84, .44, 1);
+	transform-origin: top right;
+	transform: translate(-100%, 0rem) rotate(270deg) translateY(-2rem) translateX(-0.25rem);
+}

@@ -1,0 +1,49 @@
+.intro {
+	display: flex;
+	align-items: flex-start;
+	width: 50vw;
+	flex-direction: column;
+	margin-top: 20vh;
+	padding-top: 4rem;
+	padding-left: 15rem;
+}
+
+.intro p {
+	padding: 4rem 0 3rem 0;
+	width: 32vw;
+}
+
+.project {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	width: 50vw;
+	flex-direction: column;
+	margin-bottom: 0;
+	padding-right: 15rem;
+}
+
+.card_animation {
+	transition: padding 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.card_animation:hover {
+	padding-bottom: 20vh;
+}
+
+.contact {
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+	width: 50vw;
+	flex-direction: column;
+	margin-top: 20vh;
+	padding-top: 4rem;
+	padding-right: 15rem;
+}
+
+.contact h1 {
+	position: fixed;
+	transform: rotate(-90deg);
+	transform-origin: top right;
+}
