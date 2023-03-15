@@ -92,4 +92,6 @@ export default function Layout({ children }) {
 	)
 }
 
-export const Head = () => <title>Web Developer | Will</title>
+export const Head = () => (
+	<title>Web Developer | Will</title>
+)
