@@ -21,6 +21,7 @@ export default function ContactForm({ contactWrapper, align }) {
 				method="POST"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
+				onSubmit="submit"
 			>
 				<input type="hidden" name="bot-field" />
 				<input type="hidden" name="form-name" value="PortfolioMail" />
