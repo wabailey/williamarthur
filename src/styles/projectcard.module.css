@@ -1,15 +1,13 @@
 .project_card {
 	position: relative;
 	height: 60vh;
-	width: 25vw;
+	aspect-ratio: 3 / 4;
 	z-index: 2;
 }
 
 .card_container {
-	z-index: 3;
 	position: absolute;
 	inset: 0;
-	margin: auto;
 	transition: opacity 1s cubic-bezier(.19, 1, .22, 1);
 }
 
@@ -67,15 +65,14 @@
 }
 
 .card_img {
-	position: relative;
-	height: 100%;
-	width: 100%;
+	position: absolute;
+	inset: 0;
 	overflow: hidden;
-	z-index: 1;
 }
 
 .card_sidetext {
 	position: absolute;
+	z-index: -1;
 	top: 0;
 	left: 0;
 	transition: transform 1s cubic-bezier(.165, .84, .44, 1);

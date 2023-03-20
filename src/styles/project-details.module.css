@@ -1,0 +1,72 @@
+.details_image {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 37.5vw;
+}
+
+.image_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	background: linear-gradient(90deg, rgba(11, 11, 11, 0) 0%, rgba(11, 11, 11, 0.75) 100%);
+}
+
+.image_container {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.details_text {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 62.5vw;
+	margin-top: 20vh;
+	padding-right: 15rem;
+	z-index: 10;
+}
+
+.details_text small {
+	text-transform: uppercase;
+}
+
+.details_title {
+	padding-top: 4rem;
+	margin-left: -6rem;
+}
+
+.details_body {
+	display: flex;
+	flex-direction: column;
+	padding-top: 4rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
+.details_subtitle {
+	display: flex;
+	flex-direction: row;
+}
+
+.subtitle_role {
+	padding-right: 10rem;
+}
+
+.details_description {
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+}
+
+.details_btns {
+	display: flex;
+	flex-direction: row;
+}
+
+.details_btns div:first-child {
+	margin-right: 4rem;
+}
