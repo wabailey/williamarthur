@@ -21,25 +21,38 @@ export default function Layout({ children }) {
 		}	
 	`)
 
-	const { title, description, linkedin, github } = data.site.siteMetadata
+	const { title, linkedin, github } = data.site.siteMetadata
 
 	return (
 		<div>
 			<div className={styles.columns}>
-				<div className={styles.col_item}></div>
-				<div className={styles.col_item}></div>
-				<div className={styles.col_item}></div>
-				<div className={styles.col_item}></div>
-				<div className={styles.col_item}></div>
-				<div className={styles.col_item}></div>
-				<div className={styles.col_item}></div>
+				<div className={styles.col_1}></div>
+				<div className={styles.col_2}></div>
+				<div className={styles.col_3}></div>
+				<div className={styles.col_4}></div>
+				<div className={styles.col_5}></div>
+				<div className={styles.col_6}></div>
+				<div className={styles.col_7}></div>
 			</div>
 
 			<div className={styles.bg_container}>
-				<div className={`${styles.w} ${styles.w1}`}></div>
-				<div className={`${styles.w} ${styles.w2}`}></div>
-				<div className={`${styles.w} ${styles.w3}`}></div>
-				<div className={`${styles.w} ${styles.w4}`}></div>
+
+				<div className={styles.bg_w}>
+					<div className={styles.w_container}>
+						<div className={styles.w1}></div>
+					</div>
+					<div className={styles.w_container}>
+						<div className={styles.w2}></div>
+					</div>
+					<div className={styles.w_container}>
+						<div className={styles.w3}></div>
+					</div>
+					<div className={styles.w_container}>
+						<div className={styles.w4}></div>
+					</div>
+
+				</div>
+
 			</div>
 
 			<div className={styles.header_container}>
@@ -47,7 +60,6 @@ export default function Layout({ children }) {
 					<div className={styles.nav_siteTitle}>
 						<Link to="/">
 							<h3>{title}.</h3>
-							<small>{description}</small>
 						</Link>
 					</div>
 					<div className={styles.nav_links}>

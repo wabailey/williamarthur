@@ -8,4 +8,4 @@ cardImg: ../images/cards/recipe.jpg
 bannerImg: ../images/banners/recipe-banner.jpg
 ---
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eius, quia, ut veritatis iste suscipit placeat minima voluptate non animi fugit officiis! Corporis ratione tempore veritatis! Illo porro dolorem cumque quas harum placeat. Sequi aspernatur, tenetur minima molestiae quam consequatur perspiciatis natus eaque omnis eligendi vero asperiores nobis doloremque culpa repellendus! Maiores quidem.
+A personal study on Gatsby and Contentful. Incorporating conditional rendering, graphql queries, contentful objects and APIs and dynamic page creation to create a content-heavy recipes website with a searchable database and search filters. This study was helpful in understanding how to incorporate a headless CMS into a Gatsby project, communicating with APIs, and also querying GraphQL to access site content.

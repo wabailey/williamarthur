@@ -1,49 +1,148 @@
-.intro {
-	display: flex;
-	align-items: flex-start;
-	width: 50vw;
-	flex-direction: column;
-	margin-top: 20vh;
-	padding-top: 4rem;
-	padding-left: 15rem;
-}
+/* .container {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 2em;
+	margin-bottom: 100px;
+} */
 
 .intro p {
-	padding: 4rem 0 3rem 0;
-	width: 32vw;
-}
-
-.project {
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
-	width: 50vw;
-	flex-direction: column;
-	margin-bottom: 0;
-	padding-right: 15rem;
+	padding: 2rem 0;
+	max-width: 580px;
 }
 
 .card_animation {
-	transition: padding 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-}
-
-.card_animation:hover {
-	padding-bottom: 20vh;
-}
-
-.contact {
-	display: flex;
-	align-items: flex-end;
-	text-align: right;
-	width: 50vw;
-	flex-direction: column;
-	margin-top: 20vh;
-	padding-top: 4rem;
-	padding-right: 15rem;
+	margin-top: 2em;
 }
 
 .contact h1 {
-	position: fixed;
-	transform: rotate(-90deg);
-	transform-origin: top right;
+	margin-bottom: .8em;
+}
+
+.contact__btn {
+	display: flex;
+	justify-content: flex-start;
+}
+
+@media (min-width: 500px) {
+
+	/* .container, */
+	.card_animation {
+		margin-top: 3em;
+	}
+
+	.intro p {
+		padding: 3rem 0;
+	}
+}
+
+@media (min-width: 700px) {
+	/* .container {
+		margin-top: 4em;
+		margin-bottom: 120px;
+	} */
+
+	.intro p {
+		padding: 4rem 0;
+	}
+
+	.card_animation {
+		margin-top: 4em;
+	}
+}
+
+@media (min-width: 1200px) {
+	/* .container {
+		margin: 0;
+		max-width: none;
+	} */
+
+	.intro {
+		width: 50vw;
+		height: 100vh;
+		margin-top: 144px;
+		padding-left: 12.5vw;
+	}
+
+	.intro__wrapper {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		width: 100%;
+		max-width: 720px;
+		padding-top: var(--h1_line-height);
+	}
+
+	.intro p {
+		padding: var(--h1_line-height) 0;
+		max-width: 580px;
+	}
+
+	.project {
+		display: flex;
+		align-items: flex-end;
+		width: 25vw;
+		height: 100vh;
+		margin: 0 12.5vw;
+	}
+
+	.project__wrapper {
+		position: relative;
+	}
+
+	.project h1 {
+		font-size: 2.25em;
+		line-height: 0.8em;
+		position: absolute;
+		transform-origin: top right;
+		top: 0;
+		right: 0;
+		transform: rotate(-90deg) translateY(0.5rem);
+	}
+
+	.card_animation {
+		margin-top: 0;
+	}
+
+	.contact {
+		width: 50vw;
+		height: 100vh;
+		margin-top: 144px;
+		padding-right: 12.5vw;
+	}
+
+	.contact__wrapper {
+		display: flex;
+		justify-content: flex-end;
+		padding-top: var(--h1_line-height);
+		text-align: right;
+	}
+
+	.contact h1 {
+		position: absolute;
+		transform: rotate(-90deg);
+		transform-origin: top right;
+	}
+
+	.contact__btn {
+		justify-content: flex-end;
+	}
+
+	.form__wrapper {
+		margin-left: auto;
+		margin-right: var(--h1_line-height);
+	}
+
+}
+
+@media (min-width: 1440px) {
+	.project h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media (min-width: 1680px) {
+	.project h1 {
+		font-size: 3em;
+	}
 }

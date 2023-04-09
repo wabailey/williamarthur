@@ -1,18 +1,18 @@
 import React from "react";
 import * as styles from "../styles/contactform.module.css";
 
-export default function ContactForm({ contactWrapper, align }) {
+export default function ContactForm({ contactWrapper, btnAlign }) {
 	return (
-		<div style={contactWrapper}>
+		<div className={contactWrapper}>
 			<div className={styles.contact_textContainer}>
 				<p>
 					Feel free to get in touch if you have a project or work opportunity you would like to discuss with me.
-				</p>
-				<p>
+					<br />
+					<br />
 					Email is the best way to reach me: <a href="mailto:willarthbailey@gmail.com">willarthbailey@gmail.com</a>.
-				</p>
-				<p>
-					Or use the form below, which also goes straight to my email.
+					<br />
+					<br />
+					Or use the form below, which also goes to my email.
 				</p>
 			</div>
 
@@ -25,7 +25,9 @@ export default function ContactForm({ contactWrapper, align }) {
 			>
 				<input type="hidden" name="bot-field" />
 				<input type="hidden" name="form-name" value="PortfolioMail" />
-				<div className={styles.form}>
+
+				<div className={styles.form_inputs}>
+
 					<div className={styles.floating}>
 						<input className={styles.floating__input} id="input_name" name="name" type="text" placeholder="Name" required />
 						<label className={styles.floating__label} htmlFor="input_name" data-content="Name">
@@ -38,7 +40,11 @@ export default function ContactForm({ contactWrapper, align }) {
 						<label className={styles.floating__label} htmlFor="input_email" data-content="Email">
 							<span className={styles.hidden_visually}>Email</span>
 						</label>
-					</div >
+					</div>
+
+				</div>
+
+				<div className={styles.form_inputs}>
 
 					<div className={styles.floating}>
 						<textarea className={styles.floating__input} id="input_message" name="message" type="text" placeholder="Message" required />
@@ -47,10 +53,9 @@ export default function ContactForm({ contactWrapper, align }) {
 						</label>
 					</div >
 
-
 				</div>
 
-				<div style={align}>
+				<div className={btnAlign}>
 					<button type="submit">Submit</button>
 				</div>
 

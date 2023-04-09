@@ -9,22 +9,15 @@ export default function Contact() {
 	return (
 		<Layout>
 
-			<section className={`slide ${styles.contact}`}>
+			<section className={`slide ${styles.container} ${styles.contact}`}>
+				<div className={styles.contact__wrapper}>
+					<h1>Contact Me</h1>
 
-				<h1>Contact Me</h1>
-
-				<ContactForm
-					contactWrapper={{
-						marginLeft: "4rem",
-						marginRight: "auto",
-					}}
-					align={{
-						display: "flex",
-						justifyContent: "flex-start",
-					}}
-				/>
-
-
+					<ContactForm
+						contactWrapper={styles.form__wrapper}
+						btnAlign={styles.contact__btn}
+					/>
+				</div>
 			</section>
 
 		</Layout>

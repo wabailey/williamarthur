@@ -3,42 +3,25 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import * as styles from "../styles/projectcard.module.css";
 
-export default function ProjectCard({ className, link, title, work, stack, img, sideText }) {
+export default function ProjectCard({ className, link, title, work, stack, img }) {
 
 	return (
 		<div className={className}>
 			<div className={styles.project_card}>
 
-				<Link to={link} className={styles.card_container}>
+				<Link to={link} >
 
-					<div className={styles.card_text}>
-
-						<div>
-							<h2>{title}</h2>
-						</div>
-
-						<div>
-							<div className={styles.card_stroke}></div>
-							<div>
-								<small>
-									{work}
-									<br />
-									<br />
-									{stack}
-								</small>
-							</div>
-						</div>
-
-					</div>
+					<GatsbyImage image={img} alt="project screenshot" />
 
 					<div className={styles.card_overlay}></div>
 
-					<div className={styles.card_img}>
-						<GatsbyImage image={img} alt="project screenshot" />
-					</div>
+					<div className={styles.card_container__text}>
 
-					<div style={sideText} className={styles.card_sidetext}>
-						<h3>Recent Work</h3>
+						<div className={styles.text_wrapper}>
+							<h3>{title}</h3>
+							<small>{stack}</small>
+						</div>
+
 					</div>
 
 				</Link>

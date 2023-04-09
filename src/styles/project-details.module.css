@@ -45,7 +45,6 @@
 	flex-direction: column;
 	padding-top: 4rem;
 	padding-left: 6rem;
-	padding-right: 6rem;
 }
 
 .details_subtitle {
@@ -59,7 +58,9 @@
 
 .details_description {
 	padding-top: 3rem;
+	padding-right: 4rem;
 	padding-bottom: 4rem;
+	min-height: 300px;
 }
 
 .details_btns {
@@ -67,6 +68,7 @@
 	flex-direction: row;
 }
 
-.details_btns div:first-child {
+.details_btns div:nth-child(2) {
+	margin-left: 4rem;
 	margin-right: 4rem;
 }

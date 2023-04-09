@@ -8,4 +8,4 @@ cardImg: ../images/cards/bank.jpg
 bannerImg: ../images/banners/bank-banner.jpg
 ---
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eius, quia, ut veritatis iste suscipit placeat minima voluptate non animi fugit officiis! Corporis ratione tempore veritatis! Illo porro dolorem cumque quas harum placeat. Sequi aspernatur, tenetur minima molestiae quam consequatur perspiciatis natus eaque omnis eligendi vero asperiores nobis doloremque culpa repellendus! Maiores quidem.
+A personal study on React and Tailwind. Incorporating components, hooks, and responsive styling to create a simple one-page brochure website that advertises financial products for a mock banking company. This study was helpful in understanding how to incorporate Tailwind into a React project and also common component logic for React projects.

@@ -9,7 +9,7 @@ export const Head = ({ data }) => <title>Will - {data.markdownRemark.frontmatter
 export default function ProjectDetails({ data }) {
 
 	const { html } = data.markdownRemark
-	const { stack, title, work, siteLink, siteCode, bannerImg } = data.markdownRemark.frontmatter
+	const { stack, title, work, siteLink, siteCode, siteDesign, bannerImg } = data.markdownRemark.frontmatter
 
 	return (
 		<Layout>
@@ -55,35 +55,35 @@ export default function ProjectDetails({ data }) {
 
 						<div className={styles.details_btns}>
 
-							<div>
-								<a href={siteLink} target="_blank" rel="noreferrer">
-									<button type="button">Visit The Site</button>
-								</a>
-							</div>
+							{siteLink &&
+								<div>
+									<a href={siteLink} target="_blank" rel="noreferrer">
+										<button type="button">Visit The Site</button>
+									</a>
+								</div>
+							}
 
-							<div>
-								<a href={siteCode} target="_blank" rel="noreferrer">
-									<button type="button">See The Code</button>
-								</a>
-							</div>
+							{siteCode &&
+								<div>
+									<a href={siteCode} target="_blank" rel="noreferrer">
+										<button className="btn_secondary" type="button">View The Code</button>
+									</a>
+								</div>
+							}
+
+							{siteDesign &&
+								<div>
+									<a href={siteDesign} target="_blank" rel="noreferrer">
+										<button className="btn_secondary" type="button">View The Design</button>
+									</a>
+								</div>
+							}
 
 						</div>
 
-
-
 					</div>
 
-
-
-
-
-
-
 				</div>
-
-
-
-
 
 			</section>
 
@@ -101,6 +101,7 @@ export const query = graphql`
       work
 			siteLink
 			siteCode
+			siteDesign
       bannerImg {
         childImageSharp {
           gatsbyImageData(

@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
-import * as styles from "../styles/home.module.css";
 import "../styles/global.css";
+import * as styles from "../styles/home.module.css";
 import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
 import ContactForm from "../components/ContactForm";
@@ -18,49 +18,48 @@ export default function Home({ data }) {
   return (
     <Layout>
 
-      <section className={`slide ${styles.intro}`}>
-        <h1>My name <br /> is Will. <br /> I can develop your website.</h1>
-        <p>
-          I'm a freelance web developer working just outside of Wrexham and Chester. I find fulfilment in developing <br /> <Link to="/projects">website designs</Link> to pixel perfection and accompanying them with slick functionality. The tools that I am currently working with are <Link to="/projects/banking-app/">React</Link>, <Link to="/projects/ellwood-estates/">Astro</Link>, and <Link to="/projects/recipe-app/">Gatsby</Link>. The tools I am currently learning about are Next.js and Contentful.
-        </p>
-        <Link to="/projects/">
-          <button type="button">My Work</button>
-        </Link>
+      <section className={`container ${styles.intro}`}>
+        <div className={styles.intro__wrapper}>
+          <h1>My name <br /> is Will. <br /> I can develop <br /> your website.</h1>
+          <p>
+            I'm a freelance web developer working just outside of Wrexham and Chester. I find fulfilment in developing <Link to="/projects">website designs</Link> to pixel perfection and accompanying them with slick functionality. The tools that I am currently working with are <Link to="/projects/banking-app/">React</Link>, <Link to="/projects/ellwood-estates/">Astro</Link>, and <Link to="/projects/recipe-app/">Gatsby</Link>. The tools I am currently learning about are Next.js and Contentful.
+          </p>
+          <Link to="/projects/">
+            <button type="button">My Work</button>
+          </Link>
+        </div>
       </section>
 
-      <section className={`slide ${styles.project}`}>
+      <section className={`container ${styles.project}`}>
 
-        <ProjectCard className={styles.card_animation}
-          key={project.id}
-          link={"/projects/" + project.frontmatter.slug}
-          title={project.frontmatter.title}
-          work={project.frontmatter.work}
-          stack={project.frontmatter.stack}
-          img={getImage(project.frontmatter.cardImg)}
-        />
+        <div className={styles.project__wrapper}>
+          <h1>Recent Work</h1>
 
-      </section>
+          <ProjectCard className={styles.card_animation}
+            key={project.id}
+            link={"/projects/" + project.frontmatter.slug}
+            title={project.frontmatter.title}
+            work={project.frontmatter.work}
+            stack={project.frontmatter.stack}
+            img={getImage(project.frontmatter.cardImg)}
+          />
 
-      <section className={`slide ${styles.contact}`}>
-
-        <h1>Contact Me</h1>
-
-        <ContactForm
-          contactWrapper={{
-            marginLeft: "auto",
-            marginRight: "4rem",
-          }}
-          align={{
-            display: "flex",
-            justifyContent: "flex-end",
-          }}
-        />
-
-
+        </div>
 
       </section>
 
-    </Layout>
+      <section className={`container ${styles.contact}`}>
+        <div className={styles.contact__wrapper}>
+          <h1>Contact Me</h1>
+
+          <ContactForm
+            contactWrapper={styles.form__wrapper}
+            btnAlign={styles.contact__btn}
+          />
+        </div>
+      </section>
+
+    </Layout >
   )
 }
 
