@@ -92,12 +92,11 @@ small {
 	transform: scale(0.75);
 }
 
-button {
+button,
+.btn_secondary {
 	cursor: pointer;
-	background: rgb(235, 235, 235);
-	border-width: 0;
+	border: 0;
 	border-radius: 20px;
-	color: rgb(8, 8, 8);
 	display: block;
 	width: auto;
 	min-width: 160px;
@@ -109,29 +108,27 @@ button {
 	transition: transform 0.35s cubic-bezier(.35, 1.43, .68, 1.42);
 }
 
-button:hover {
+button {
+	background: rgb(235, 235, 235);
+	color: rgb(8, 8, 8);
+}
+
+.btn_secondary {
+	background: rgba(12, 12, 12, 0.9);
+	color: rgb(138, 138, 138);
+	border: 2px solid rgb(235, 235, 235);
+}
+
+button:hover,
+.btn_secondary:hover {
 	transform: scale(1.1);
 	opacity: 0.75;
 }
 
-button:active {
+button:active,
+.btn_secondary:active {
 	transform: scale(0.9);
 	opacity: 0.5;
-}
-
-.btn_secondary {
-	cursor: pointer;
-	background: rgba(12, 12, 12, 0.9);
-	border: 2px solid rgb(235, 235, 235);
-	border-radius: 12px;
-	color: rgb(138, 138, 138);
-	display: block;
-	width: auto;
-	height: 4rem;
-	padding: 0 2.5rem;
-	font-weight: 700;
-	font-size: 1em;
-	transition: transform 0.25s ease-in-out 0s;
 }
 
 @media (max-width: 1199px) {
@@ -145,13 +142,15 @@ button:active {
 }
 
 @media (min-width: 500px) and (max-width: 699px) {
+	.container {
+		margin-top: 3em;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 1199px) {
 	p {
 		font-size: 1.25em;
 		line-height: 1.4em;
-	}
-
-	.container {
-		margin-top: 3em;
 	}
 }
 

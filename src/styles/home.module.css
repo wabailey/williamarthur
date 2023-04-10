@@ -1,17 +1,9 @@
-/* .container {
-	width: 90%;
-	max-width: 900px;
-	margin: 0 auto;
-	margin-top: 2em;
-	margin-bottom: 100px;
-} */
-
 .intro p {
 	padding: 2rem 0;
 	max-width: 580px;
 }
 
-.card_animation {
+.card_container {
 	margin-top: 2em;
 }
 
@@ -26,8 +18,7 @@
 
 @media (min-width: 500px) {
 
-	/* .container, */
-	.card_animation {
+	.card_container {
 		margin-top: 3em;
 	}
 
@@ -37,25 +28,17 @@
 }
 
 @media (min-width: 700px) {
-	/* .container {
-		margin-top: 4em;
-		margin-bottom: 120px;
-	} */
 
 	.intro p {
 		padding: 4rem 0;
 	}
 
-	.card_animation {
+	.card_container {
 		margin-top: 4em;
 	}
 }
 
 @media (min-width: 1200px) {
-	/* .container {
-		margin: 0;
-		max-width: none;
-	} */
 
 	.intro {
 		width: 50vw;
@@ -100,7 +83,7 @@
 		transform: rotate(-90deg) translateY(0.5rem);
 	}
 
-	.card_animation {
+	.card_container {
 		margin-top: 0;
 	}
 

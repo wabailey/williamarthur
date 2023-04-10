@@ -19,18 +19,29 @@
 
 .col_1 {
 	left: 0%;
+	display: block;
 }
 
 .col_2 {
-	left: 50%;
+	left: 25%;
+	display: block;
 }
 
 .col_3 {
-	left: 100%;
+	left: 50%;
+	display: block;
 }
 
-.col_4,
-.col_5,
+.col_4 {
+	left: 75%;
+	display: block;
+}
+
+.col_5 {
+	left: 100%;
+	display: block;
+}
+
 .col_6,
 .col_7 {
 	display: none;
@@ -91,31 +102,6 @@
 }
 
 @media (min-width: 500px) {
-	.col_1 {
-		left: 0%;
-		display: block;
-	}
-
-	.col_2 {
-		left: 25%;
-		display: block;
-	}
-
-	.col_3 {
-		left: 50%;
-		display: block;
-	}
-
-	.col_4 {
-		left: 75%;
-		display: block;
-	}
-
-	.col_5 {
-		left: 100%;
-		display: block;
-	}
-
 	.nav_links li:nth-of-type(2) {
 		padding: 0 5em;
 	}

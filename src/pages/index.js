@@ -35,7 +35,7 @@ export default function Home({ data }) {
         <div className={styles.project__wrapper}>
           <h1>Recent Work</h1>
 
-          <ProjectCard className={styles.card_animation}
+          <ProjectCard className={styles.card_container}
             key={project.id}
             link={"/projects/" + project.frontmatter.slug}
             title={project.frontmatter.title}

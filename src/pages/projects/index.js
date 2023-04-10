@@ -28,7 +28,7 @@ export default function Projects({ data }) {
       {
         projects.map(project => (
           <section className={`container ${styles.project}`} key={project.id}>
-            <ProjectCard className={styles.card_animation}
+            <ProjectCard
 
               link={"/projects/" + project.frontmatter.slug}
               title={project.frontmatter.title}
