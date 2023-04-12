@@ -17,7 +17,7 @@ export default function ProjectDetails({ data }) {
 			<section className={styles.bg_img}>
 
 				<GatsbyImage style={{ height: "100%" }}
-					image={getImage(bannerImg)} alt="screenshot of project homepage"
+					image={getImage(bannerImg)} alt="screenshot of the projects homepage"
 				/>
 
 				<div className={styles.img_overlay}></div>
@@ -30,7 +30,7 @@ export default function ProjectDetails({ data }) {
 					<h1>{title}</h1>
 				</div>
 
-				<div className={styles.details_body}>
+				<div>
 
 					<div className={styles.details_subtitle}>
 
@@ -39,7 +39,7 @@ export default function ProjectDetails({ data }) {
 							<p>{work}</p>
 						</div>
 
-						<div className={styles.subtitle_stack}>
+						<div>
 							<small>Technologies</small>
 							<p>{stack}</p>
 						</div>

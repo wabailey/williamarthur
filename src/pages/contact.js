@@ -9,7 +9,7 @@ export default function Contact() {
 	return (
 		<Layout>
 
-			<section className={`slide ${styles.container} ${styles.contact}`}>
+			<section className={`container ${styles.contact}`}>
 				<div className={styles.contact__wrapper}>
 					<h1>Contact Me</h1>
 

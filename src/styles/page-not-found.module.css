@@ -1,0 +1,14 @@
+.notfound p {
+	padding-top: var(--h1_line-height);
+}
+
+@media (min-width: 1200px) {
+
+	.notfound {
+		width: 50vw;
+		height: 100vh;
+		margin-top: 144px;
+		padding-top: var(--h1_line-height);
+		padding-left: 12.5vw;
+	}
+}

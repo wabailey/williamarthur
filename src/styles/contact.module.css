@@ -1,20 +1,8 @@
-.container {
-	width: 90%;
-	max-width: 900px;
-	margin: 0 auto;
-	margin-top: calc(1vw*8);
-	margin-bottom: 100px;
-}
-
 .contact h1 {
 	margin-bottom: .8em;
 }
 
 @media (min-width: 1200px) {
-	.container {
-		margin: 0;
-		max-width: none;
-	}
 
 	.contact {
 		width: 50vw;
