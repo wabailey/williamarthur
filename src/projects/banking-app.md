@@ -1,7 +1,7 @@
 ---
 title: Banking App
 work: Development
-stack: React & Tailwind
+stack: React • Tailwind
 slug: banking-app
 date: 2021-12-01
 cardImg: ../images/cards/bank.jpg

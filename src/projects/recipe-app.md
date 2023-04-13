@@ -1,7 +1,9 @@
 ---
 title: Recipe App
 work: Development
-stack: Gatsby, CSS, Contentful
+stack: Gatsby • Contentful
+siteLink: https://64376450a247600008d38346--gatsby-contentful-recipe-site.netlify.app/
+siteCode: https://github.com/wabailey/gatsby-contentful_recipe-site
 slug: recipe-app
 date: 2022-01-01
 cardImg: ../images/cards/recipe.jpg

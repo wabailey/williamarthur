@@ -1,7 +1,7 @@
 ---
 title: Ellwood Estates
 work: Design & Development
-stack: HTML, Astro, Tailwind
+stack: Astro • Tailwind
 siteLink: https://www.ellwoodestates.co.uk/
 siteCode: https://www.github.com/
 siteDesign: https://www.figma.com/
