@@ -4,7 +4,7 @@ work: Design & Development
 stack: Astro • Tailwind
 siteLink: https://www.ellwoodestates.co.uk/
 siteCode: https://www.github.com/
-siteDesign: https://www.figma.com/
+siteDesign: https://www.figma.com/file/couDUmX2CbmOAoBSAO842D/Cottage-Site?node-id=0%3A1&t=tdvQBHMaj3YCTpNR-1
 slug: ellwood-estates
 date: 2021-06-01
 cardImg: ../images/cards/ellwood-estates.jpg

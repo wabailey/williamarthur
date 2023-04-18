@@ -1,8 +1,11 @@
 ---
-title: Banking App
+title: Banking Site
 work: Development
 stack: React • Tailwind
-slug: banking-app
+siteLink: https://react-tailwind-bank-site.netlify.app/
+siteCode: https://github.com/wabailey/react-tailwind-bank-site
+siteDesign: https://www.figma.com/file/Z2xI9cmJnBYCdozhivzTKC/Banking-Site?node-id=0%3A1&t=Xxq7JVZk1R0hW8J4-1
+slug: banking-site
 date: 2021-12-01
 cardImg: ../images/cards/bank.jpg
 bannerImg: ../images/banners/bank-banner.jpg
