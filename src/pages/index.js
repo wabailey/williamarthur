@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
 import ContactForm from "../components/ContactForm";
 
-export const Head = () => <title>Will - Web Developer</title>
+export const Head = () => <title>WA | Web Development</title>
 
 export default function Home({ data }) {
 
@@ -22,7 +22,7 @@ export default function Home({ data }) {
         <div className={styles.intro__wrapper}>
           <h1>My name <br /> is Will. <br /> I can develop <br /> your website.</h1>
           <p>
-            I'm a freelance web developer working just outside of Wrexham and Chester. I find fulfilment in developing <Link to="/projects">website designs</Link> to pixel perfection and accompanying them with slick functionality. The tools that I am currently working with are <Link to="/projects/banking-app/">React</Link>, <Link to="/projects/ellwood-estates/">Astro</Link>, and <Link to="/projects/recipe-app/">Gatsby</Link>. The tools I am currently learning about are Next.js and Contentful.
+            I am a web developer from the UK, based near Wrexham and Chester. I have experience in all stages of web development, from wireframing to deployment, building dynamic and engaging sites with scalability. The tools that I currently work with are <Link to="/projects/banking-app/">React</Link>, <Link to="/projects/ellwood-estates/">Astro</Link>, Next.js, and <Link to="/projects/recipe-app/">Sanity</Link>. The tools I am currently learning about are Framer Motion and Shopify.
           </p>
           <Link to="/projects/">
             <button type="button">My Work</button>

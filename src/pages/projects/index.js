@@ -6,7 +6,7 @@ import * as styles from "../../styles/projects.module.css";
 import Layout from "../../components/Layout";
 import ProjectCard from "../../components/ProjectCard";
 
-export const Head = () => <title>Will - Projects</title>
+export const Head = () => <title>WA | Web Development</title>
 
 export default function Projects({ data }) {
 

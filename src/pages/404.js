@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from "../components/Layout";
 import * as styles from "../styles/page-not-found.module.css";
 
-export const Head = () => <title>Will - Page Not Found</title>
+export const Head = () => <title>WA - Page Not Found</title>
 
 export default function NotFound() {
 	return (

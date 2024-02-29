@@ -50,7 +50,7 @@
 .header_container {
 	width: 100%;
 	backdrop-filter: blur(5px);
-	background-color: rgba(9, 9, 9, 0.4);
+	background-color: rgba(14, 14, 14, 0.4);
 }
 
 .header_nav {
@@ -95,6 +95,11 @@
 
 .nav_links img {
 	min-width: 3em;
+}
+
+.nav_links img:hover {
+	background-color: rgb(29, 29, 29);
+	transition: all 0.25s ease-in-out 0s;
 }
 
 .nav_links a:hover {

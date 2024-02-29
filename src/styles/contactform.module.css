@@ -11,7 +11,7 @@
 .floating {
 	width: 100%;
 	margin-bottom: 1em;
-	background-color: rgb(9, 9, 9);
+	background-color: rgb(14, 14, 14);
 	transition: background-color 0.2s ease;
 	border-radius: 10px;
 }
@@ -35,6 +35,13 @@ textarea {
 	resize: none;
 	overflow: auto;
 	height: 4em;
+}
+
+input:focus, textarea:focus {
+	background-color: rgb(24, 24, 24);
+	box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.35);
+	transition: all .1s ease-out;
+	outline: none;
 }
 
 .floating:hover,

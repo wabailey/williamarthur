@@ -40,7 +40,7 @@ export default function ProjectDetails({ data }) {
 						</div>
 
 						<div>
-							<small>Technologies</small>
+							<small>Stack</small>
 							<p>{stack}</p>
 						</div>
 

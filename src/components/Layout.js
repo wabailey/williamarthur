@@ -12,7 +12,6 @@ export default function Layout({ children }) {
 		query SiteInfo {
 			site {
 				siteMetadata {
-					title
 					description
 					linkedin
 					github
@@ -21,7 +20,7 @@ export default function Layout({ children }) {
 		}	
 	`)
 
-	const { title, linkedin, github } = data.site.siteMetadata
+	const { linkedin, github } = data.site.siteMetadata
 
 	return (
 		<div>
@@ -59,24 +58,24 @@ export default function Layout({ children }) {
 				<nav className={styles.header_nav}>
 					<div className={styles.nav_siteTitle}>
 						<Link to="/">
-							<h3>{title}.</h3>
+							<h3>william arthur.</h3>
 						</Link>
 					</div>
 					<div className={styles.nav_links}>
 						<ul>
 							<li>
-								<Link to="/projects" activeStyle={{ color: "white" }}>
-									Projects
+								<Link to="/" activeStyle={{ color: "white" }}>
+									Home
 								</Link>
 							</li>
 							<li>
 								<Link to="/">
-									<StaticImage src="../images/WA-Logo-White.svg" alt="William Arthur Logo" placeholder="blurred" height={48} />
+									<StaticImage src="../images/WA-Logo-White.svg" alt="William Arthur Logo" height={48} />
 								</Link>
 							</li>
 							<li>
-								<Link to="/contact" activeStyle={{ color: "white" }}>
-									Contact
+								<Link to="/projects" activeStyle={{ color: "white" }}>
+									Projects
 								</Link>
 							</li>
 						</ul>

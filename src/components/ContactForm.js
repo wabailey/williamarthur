@@ -9,7 +9,7 @@ export default function ContactForm({ contactWrapper, btnAlign }) {
 					Feel free to get in touch if you have a project or work opportunity you would like to discuss with me.
 					<br />
 					<br />
-					Email is the best way to reach me: <a href="mailto:willarthbailey@gmail.com">willarthbailey@gmail.com</a>.
+					<a href="mailto:willarthbailey@gmail.com">[Email is the best way to reach me].</a>
 					<br />
 					<br />
 					Or use the form below, which also goes to my email.

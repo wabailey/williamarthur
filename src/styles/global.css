@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;700;900&display=swap');
 
 :root {
-	--bg_primary: rgb(12, 12, 12);
+	--bg_primary: rgb(22, 22, 22);
 	--text_primary: rgb(235, 235, 235);
 	--text_secondary: rgb(138, 138, 138);
 	--h1_font-size: calc(1vw * 4.1666666666666666666666666666667);
@@ -96,7 +96,7 @@ button,
 .btn_secondary {
 	cursor: pointer;
 	border: 0;
-	border-radius: 20px;
+	border-radius: 10px;
 	display: block;
 	width: auto;
 	min-width: 160px;
