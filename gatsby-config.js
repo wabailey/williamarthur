@@ -40,7 +40,7 @@ module.exports = {
   siteMetadata: {
     title: "WA | Web Development",
     description: "Web Development Portfolio",
-    copyright: `Copyright ${Date().getFullYear()} William Arthur`,
+    copyright: `Copyright ${new Date().getFullYear()} William Arthur`,
     contact: "willarthbailey@gmail.com",
     linkedin: "https://www.linkedin.com/in/willab/",
     github: "https://github.com/wabailey",
